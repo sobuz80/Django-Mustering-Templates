@@ -1,0 +1,44 @@
+
+{% extends 'base.html' %}
+
+{% block title %} Hello{{ block.super }} {% endblock title %}
+
+{% block content %}
+      <!--main content start-->
+      <section id="main-content">
+         <section class="wrapper">
+            <div class="form-w3layouts">
+               <!-- page start-->
+               <!-- page start-->
+               <div class="row">
+                  <div class="col-lg-12">
+                     <section class="panel">
+                        <header class="panel-heading">
+                           Basic Forms
+                        </header>
+                        <div class="panel-body">
+                           <div class="position-center">
+						   
+                              <form role="form">
+                                 <div class="form-group">
+                                    <label for="exampleInputEmail1">Category Name</label>
+                                    <input type="text" class="form-control" id="title" placeholder="Enter title">
+                                 </div>
+								    <div class="form-group">
+                                    <label for="exampleInputEmail1">Category Description</label>
+                                    <textarea class="form-control " id="category_description" name="short_description" required=""></textarea>
+                                 </div>
+								 
+                                 <button type="submit" class="btn btn-info">Submit</button>
+                              </form>
+                           </div>
+                        </div>
+                     </section>
+                  </div>
+               </div>
+               <!-- page end-->
+            </div>
+         </section>
+      </section>
+{% endblock content %}
+
